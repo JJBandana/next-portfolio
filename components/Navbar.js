@@ -13,6 +13,7 @@ const Navbar = () => (
       <div className="navbar-nav">
           <a className="nav-link" href="https://github.com/JJBandana" target='_blank'>Github</a>
           <a className="nav-link" href="http://www.linkedin.com/in/jjbriasco" target='_blank'>LinkedIn</a>
+          <a className="nav-link" href="https://www.dropbox.com/scl/fi/0nvn6vids140qq3npz4di/Juan-Briasco-CV.pdf?dl=0&rlkey=3cclstlhujaz7bzuqea2phf7q" target='_blank'>Resume</a>
       </div>
     </div>
   </div>
