@@ -1,0 +1,66 @@
+.overflow {
+  height: 50%;
+  overflow: hidden;
+}
+
+.overflow .card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img-top:hover {
+  transform: scale(1.6);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(-100%)
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: white;
+  white-space: nowrap;
+  position:relative;
+}
+
+.logos:before,
+.logos:after {
+  position:absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+
+}
+
+.logos:hover .logo-slider {
+  animation-play-state: paused;
+}
+
+.logo-slider {
+  display:inline-block;
+  animation: 40s slide infinite linear;
+}
+
+.logo-slider img {
+  height: 50px;
+  margin: 0 25px;
+}
